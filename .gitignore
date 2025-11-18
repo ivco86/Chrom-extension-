@@ -1,0 +1,26 @@
+# Chrome Extension specific
+*.crx
+*.pem
+*.zip
+
+# PNG Icons (will be generated locally)
+icons/*.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+
+# Temporary files
+tmp/
+temp/

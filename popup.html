@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader Ultimate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 350px;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 12px;
+            opacity: 0.9;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        button {
+            padding: 14px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            background: white;
+            color: #667eea;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .btn-primary {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .info h3 {
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .info li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .info li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .shortcut {
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+            font-size: 11px;
+        }
+
+        .shortcut kbd {
+            display: inline-block;
+            padding: 3px 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            font-family: monospace;
+            margin: 0 2px;
+        }
+
+        .footer {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 11px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icon">📥</div>
+        <h1>Image Downloader Ultimate</h1>
+        <p>Качествен downloader на изображения</p>
+    </div>
+
+    <div class="buttons">
+        <button id="startBtn" class="btn-primary">
+            <span>🚀</span>
+            Стартирай Downloader
+        </button>
+        <button id="helpBtn" class="btn-secondary">
+            <span>❓</span>
+            Как работи
+        </button>
+    </div>
+
+    <div class="info" id="infoPanel" style="display: none;">
+        <h3>Функции:</h3>
+        <ul>
+            <li>Auto Big Image качество</li>
+            <li>Canvas изображения</li>
+            <li>Lazy Load detection</li>
+            <li>ZIP архивиране</li>
+            <li>Филтри по размер</li>
+            <li>Batch download</li>
+        </ul>
+    </div>
+
+    <div class="shortcut">
+        Бърз старт: <kbd>Alt</kbd> + <kbd>W</kbd>
+    </div>
+
+    <div class="footer">
+        v1.0.0 | Made with ❤️
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
